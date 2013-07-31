@@ -14,7 +14,8 @@
 %
 % Important note:
 % This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% directory as this .tex file. These files provide the resume style and themes file:///media/Data/Dropbox/Documents/CV/NEW/20130228_CV_MODULAR/sections/name-contact.tex
+
 % used for structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,17 +32,17 @@
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
 \usepackage{ifthen}
+	
+% bibliography package
 
 \usepackage[hyperref=true,
             url=false,
             isbn=false,
-            backref=true,
-            style=custom-numeric-comp,
-            citereset=chapter,
-            maxcitenames=3,
-            maxbibnames=100,
-            block=none]{biblatex}
+            sorting=none, 
+            backend=biber]{biblatex} % load the package
             
+\addbibresource{./references/my_publications.bib}
+
 % conditional compilation flags
 
 \newboolean{thesis-abstract}
@@ -54,6 +55,8 @@
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\newcommand{\bibauthor}[1]{\textbf{#1}}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -68,7 +71,6 @@
 
 \makecvtitle % Print the CV title
 
-e
 \input{sections/education}
 
 \input{sections/research-positions}
