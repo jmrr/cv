@@ -35,13 +35,17 @@
 	
 % bibliography package
 
-\usepackage[hyperref=true,
-            url=false,
-            isbn=false,
-            sorting=none, 
-            backend=biber]{biblatex} % load the package
-            
-\addbibresource{./references/my_publications.bib}
+%\usepackage[hyperref=true,
+%            url=false,
+%            isbn=false,
+%            sorting=none, 
+%            backend=biber,
+%            style=authoryear,citestyle=alphabetic]{biblatex} % load the package
+%% Custom definitions
+%
+%\defbibheading{subbibliography}{}
+%
+%\addbibresource{./references/my_publications.bib}
 
 % conditional compilation flags
 
@@ -78,11 +82,11 @@
 \input{sections/publications}
 
 %
-%\input{dev}
+%\input{sections/dev}
 %
-%\input{advising}
+%\input{sections/advising}
 %
-%\input{teaching}
+\input{sections/teaching}
 %
 %\input{other}
 
@@ -94,41 +98,41 @@
 %----------------------------------------------------------------------------------------
 
 \section{Computer skills}
-
-\cvitem{Basic}{\textsc{java}, Adobe Illustrator}
-\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
-\cvitem{Advanced}{Computer Hardware and Support}
+\cvitem{Advanced}{\textsc{MATLAB}, Linux (server and desktop), \LaTeX, Computer Hardware and Support,  OpenOffice, Microsoft Windows}
+\cvitem{Intermediate}{\textsc{C},\textsc{C++}, \textsc{OpenCV},\textsc{python}, \textsc{html}, }
+\cvitem{Basic}{\textsc{java}, Inkscape, Adobe Creative Suite}
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Communication Skills}
-
-\cvitem{2010}{Oral Presentation at the California Business Conference}
-\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+%\section{Communication Skills}
+%
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Languages}
+\input{sections/languages}
 
-\cvitemwithcomment{English}{Mothertongue}{}
-\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
-\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
-
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+%\section{References}
+%References are available upon request.
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Interests}
-
-\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-
-\cvlistdoubleitem{Piano}{Chess}
-\cvlistdoubleitem{Cooking}{Dancing}
-\cvlistitem{Running}
+%\section{Interests}
+%
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%
+%\cvlistdoubleitem{Piano}{Chess}
+%\cvlistdoubleitem{Cooking}{Dancing}
+%\cvlistitem{Running}
 
 %----------------------------------------------------------------------------------------
 %	COVER LETTER

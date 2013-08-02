@@ -1,1 +1,4 @@
-jmr_rnd1-blx.aux jmr_rnd2-blx.aux jmr_rnd.aux
+.fuse*
+*aux
+*bak
+*xml

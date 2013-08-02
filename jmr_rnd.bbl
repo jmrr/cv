@@ -1,0 +1,91 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.7 $
+% $ biber version 0.9.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber or bibtex as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{1}
+  \entry{Rivera-Rubio2013}{inproceedings}{}
+    \name{labelname}{5}{}{%
+      {{hash=59cf09bc7e9973103af2b6913522cdb5}{Rivera-Rubio}{R\bibinithyphendelim R\bibinitperiod}{Jose}{J\bibinitperiod}{}{}{}{}}%
+      {{hash=0c27e70b0824fa95c454e76d9f6c29df}{Idrees}{I\bibinitperiod}{Saad}{S\bibinitperiod}{}{}{}{}}%
+      {{hash=fc14a4a07fa57c6c14fe6551ac5cef6b}{Alexiou}{A\bibinitperiod}{Ioannis}{I\bibinitperiod}{}{}{}{}}%
+      {{hash=76125b3a01ac6df99c5b4e4e23524dc9}{Hadjilucas}{H\bibinitperiod}{Lucas}{L\bibinitperiod}{}{}{}{}}%
+      {{hash=67cc4764d0ada45e1c81137fd1e5dcdd}{Bharath}{B\bibinitperiod}{Anil\bibnamedelima A}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+    }
+    \name{author}{5}{}{%
+      {{hash=59cf09bc7e9973103af2b6913522cdb5}{Rivera-Rubio}{R\bibinithyphendelim R\bibinitperiod}{Jose}{J\bibinitperiod}{}{}{}{}}%
+      {{hash=0c27e70b0824fa95c454e76d9f6c29df}{Idrees}{I\bibinitperiod}{Saad}{S\bibinitperiod}{}{}{}{}}%
+      {{hash=fc14a4a07fa57c6c14fe6551ac5cef6b}{Alexiou}{A\bibinitperiod}{Ioannis}{I\bibinitperiod}{}{}{}{}}%
+      {{hash=76125b3a01ac6df99c5b4e4e23524dc9}{Hadjilucas}{H\bibinitperiod}{Lucas}{L\bibinitperiod}{}{}{}{}}%
+      {{hash=67cc4764d0ada45e1c81137fd1e5dcdd}{Bharath}{B\bibinitperiod}{Anil\bibnamedelima A}{A\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{b7bc4bf36a8e37f7dad11b60161dd032}
+    \strng{fullhash}{e0937bfcb1a6402b5d7df297955a7202}
+    \field{labelalpha}{Riv+13}
+    \field{sortinit}{0}
+    \field{labelyear}{2013}
+    \field{booktitle}{Lecture Notes in Computer Science (in Press)}
+    \field{number}{2013}
+    \field{title}{{Mobile Visual Assistive Apps : Benchmarks of Vision Algorithm Performance}}
+    \field{year}{2013}
+    \verb{file}
+    \verb :media/Data/PhD\_files/Publications/ICIAP2013/submission/acvr\_35.pdf:pdf
+    \endverb
+    \keyw{devices,image-based localisation,mobile assistive,mobile computer vision,object categorisation,path-planning}
+  \endentry
+
+\endrefsection
+
+\refsection{2}
+  \entry{Rivera-Rubiotranslator2010}{book}{}
+    \name{labelname}{1}{}{%
+      {{hash=aa431804997f8d9f8487b31cefe39e27}{{Rivera-Rubio\bibnamedelimb (translator)}}{R\bibinitperiod}{Jose}{J\bibinitperiod}{}{}{}{}}%
+    }
+    \name{author}{1}{}{%
+      {{hash=aa431804997f8d9f8487b31cefe39e27}{{Rivera-Rubio\bibnamedelimb (translator)}}{R\bibinitperiod}{Jose}{J\bibinitperiod}{}{}{}{}}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=9664386aee2fbeb24542b6df66ed6eaa}{{Lazaro\bibnamedelimb Garcia}}{L\bibinitperiod}{Miguel}{M\bibinitperiod}{}{}{}{}}%
+      {{hash=1ec8d5c23b32d725dcb7df3c1b7a3581}{Pomares}{P\bibinitperiod}{Jose\bibnamedelima Miguel}{J\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+    }
+    \list{location}{1}{%
+      {Barcelona}%
+    }
+    \list{publisher}{1}{%
+      {Cabaret Voltaire}%
+    }
+    \strng{namehash}{aa431804997f8d9f8487b31cefe39e27}
+    \strng{fullhash}{aa431804997f8d9f8487b31cefe39e27}
+    \field{labelalpha}{Riv10}
+    \field{sortinit}{0}
+    \field{labelyear}{2010}
+    \field{edition}{1}
+    \field{isbn}{978-84-937643-3-3}
+    \field{title}{{The peculiar memories of Thomas Penman. By Bruce Robinson}}
+    \field{year}{2010}
+    \verb{url}
+    \verb http://www.cabaretvoltaire.es/index.php?id=129
+    \endverb
+  \endentry
+
+\endrefsection
+\endinput
+

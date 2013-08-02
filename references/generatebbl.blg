@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: generatebbl.aux
+The style file: ieeetr.bst
+Database file #1: my_publications.bib.bib
+Warning--I didn't find a database entry for "Gil:02"
+Warning--can't use both author and editor fields in Rivera-Rubiotranslator2010
+Warning--there's a number but no series in Rivera-Rubio2013
+You've used 5 entries,
+            1876 wiz_defined-function locations,
+            512 strings with 4407 characters,
+and the built_in function-call counts, 1090 in all, are:
+= -- 88
+> -- 54
+< -- 0
++ -- 20
+- -- 15
+* -- 88
+:= -- 169
+add.period$ -- 6
+call.type$ -- 5
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 62
+empty$ -- 120
+format.name$ -- 15
+if$ -- 255
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 6
+newline$ -- 19
+num.names$ -- 5
+pop$ -- 25
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 18
+stack$ -- 0
+substring$ -- 24
+swap$ -- 12
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 8
+width$ -- 6
+write$ -- 50
+(There were 3 warnings)

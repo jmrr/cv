@@ -382,7 +382,7 @@
 \newcommand*{\bibliographyitemlabel}{}% use \@biblabel{\arabic{enumiv}} for BibTeX labels
 %\newif\if@multibibfirstbib\@multibibfirstbibfalse
 % bibliography head (section, etc}, depending on whether multibib is used
-\newcommand*{\bibliographyhead}[1]{\section{#1}}
+\newcommand*{\bibliographyhead}[1]{}
 \AtEndPreamble{\@ifpackageloaded{multibib}{\renewcommand*{\bibliographyhead}[1]{\subsection{#1}}}{}}
 % thebibliography environment definition
 \newenvironment{thebibliography}[1]{}{}
