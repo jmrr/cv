@@ -374,6 +374,7 @@
   \ifthenelse{\equal{#1}{}}%
     {\href{mailto:#2}{#2}}%
     {\href{mailto:#2}{#1}}}
+    
 
 % thebibliography environment, for use with BibTeX and possibly multibib
 \newlength{\bibindent}
