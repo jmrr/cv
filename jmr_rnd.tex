@@ -14,7 +14,7 @@
 %
 % Important note:
 % This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes file:///media/Data/Dropbox/Documents/CV/NEW/20130228_CV_MODULAR/sections/name-contact.tex
+% directory as this .tex file. These files provide the resume style and themes file:///media/Data/Dropbox/Documents/CV/NEW/Modular/sections/name-contact.tex
 
 % used for structuring the document.
 %
@@ -26,39 +26,36 @@
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
 \usepackage{ifthen}
 	
-% bibliography package
+% bibliography package FIX
 
-%\usepackage[hyperref=true,
-%            url=false,
-%            isbn=false,
-%            sorting=none, 
-%            backend=biber,
-%            style=authoryear,citestyle=alphabetic]{biblatex} % load the package
-%% Custom definitions
-%
-%\defbibheading{subbibliography}{}
-%
-%\addbibresource{./references/my_publications.bib}
 
 % conditional compilation flags
 
 \newboolean{thesis-abstract}
-\setboolean{thesis-abstract}{false}
+\setboolean{thesis-abstract}{true}
 \newboolean{mscthesis-abstract}
 \setboolean{mscthesis-abstract}{true}
 \newboolean{mengthesis-abstract}
 \setboolean{mengthesis-abstract}{true}
+\newboolean{interests}
+\setboolean{interests}{true}
+\newboolean{other-experience}
+\setboolean{other-experience}{true}
+\newboolean{communication}
+\setboolean{communication}{true}
+\newboolean{references}
+\setboolean{references}{true}
 
-\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage[scale=0.8]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 \newcommand{\bibauthor}[1]{\textbf{#1}}
 
@@ -75,23 +72,56 @@
 
 \makecvtitle % Print the CV title
 
+%----------------------------------------------------------------------------------------
+% EDUCATION 
+%----------------------------------------------------------------------------------------
+%
 \input{sections/education}
 
+%----------------------------------------------------------------------------------------
+% RESEARCH POSITIONS
+%----------------------------------------------------------------------------------------
+%
 \input{sections/research-positions}
 
+%----------------------------------------------------------------------------------------
+% PUBLICATIONS
+%----------------------------------------------------------------------------------------
+%
 \input{sections/publications}
 
+%----------------------------------------------------------------------------------------
+% DEV 
+%----------------------------------------------------------------------------------------
 %
 %\input{sections/dev}
+
+%----------------------------------------------------------------------------------------
+% ADVISING 
+%----------------------------------------------------------------------------------------
 %
 %\input{sections/advising}
+
+%----------------------------------------------------------------------------------------
+% TEACHING 
+%----------------------------------------------------------------------------------------
 %
 \input{sections/teaching}
+
+%----------------------------------------------------------------------------------------
+%	OTHER EXPERIENCE 
+%----------------------------------------------------------------------------------------
+%
+\ifthenelse{\boolean{interests}}{\input{sections/other-experience}}{}
+
 %
 %\input{other}
 
+%----------------------------------------------------------------------------------------
+%	AWARDS 
+%----------------------------------------------------------------------------------------
+%
 \input{sections/awards}
-
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
@@ -105,11 +135,9 @@
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
 %----------------------------------------------------------------------------------------
+\ifthenelse{\boolean{interests}}{\input{sections/communication}}{}
 
-%\section{Communication Skills}
-%
-%\cvitem{2010}{Oral Presentation at the California Business Conference}
-%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
@@ -117,22 +145,17 @@
 
 \input{sections/languages}
 
-%----------------------------------------------------------------------------------------
-%	REFERENCES
-%----------------------------------------------------------------------------------------
-%\section{References}
-%References are available upon request.
+
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-%\section{Interests}
-%
-%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-%
-%\cvlistdoubleitem{Piano}{Chess}
-%\cvlistdoubleitem{Cooking}{Dancing}
-%\cvlistitem{Running}
+\ifthenelse{\boolean{interests}}{\input{sections/interests}}{}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+\ifthenelse{\boolean{references}}{\input{sections/references}}{}
 
 %----------------------------------------------------------------------------------------
 %	COVER LETTER
