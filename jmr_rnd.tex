@@ -47,6 +47,8 @@
 \setboolean{other-experience}{true}
 \newboolean{communication}
 \setboolean{communication}{true}
+\newboolean{computer_skills}
+\setboolean{computer_skills}{true}
 \newboolean{references}
 \setboolean{references}{true}
 
@@ -124,10 +126,9 @@
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Computer skills}
-\cvitem{Advanced}{\textsc{MATLAB}, Linux (server and desktop), \LaTeX, Computer Hardware and Support,  OpenOffice, Microsoft Windows}
-\cvitem{Intermediate}{\textsc{C},\textsc{C++}, \textsc{OpenCV},\textsc{python}, \textsc{html}, }
-\cvitem{Basic}{\textsc{java}, Inkscape, Adobe Creative Suite}
+\ifthenelse{\boolean{computer_skills}}{\input{sections/computer_skills}}{}
+
+
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
