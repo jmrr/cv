@@ -5,45 +5,45 @@ The style file: ieeetr.bst
 Database file #1: my_publications.bib.bib
 Warning--I didn't find a database entry for "Gil:02"
 Warning--can't use both author and editor fields in Rivera-Rubiotranslator2010
-You've used 6 entries,
+You've used 7 entries,
             1876 wiz_defined-function locations,
-            522 strings with 4756 characters,
-and the built_in function-call counts, 1451 in all, are:
-= -- 119
-> -- 71
+            527 strings with 4897 characters,
+and the built_in function-call counts, 1669 in all, are:
+= -- 132
+> -- 88
 < -- 0
-+ -- 26
-- -- 20
-* -- 120
-:= -- 218
-add.period$ -- 7
-call.type$ -- 6
-change.case$ -- 6
++ -- 32
+- -- 25
+* -- 140
+:= -- 253
+add.period$ -- 8
+call.type$ -- 7
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 81
-empty$ -- 157
-format.name$ -- 20
-if$ -- 342
+cite$ -- 8
+duplicate$ -- 94
+empty$ -- 181
+format.name$ -- 25
+if$ -- 391
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 7
-newline$ -- 22
-num.names$ -- 6
-pop$ -- 31
+int.to.str$ -- 7
+missing$ -- 8
+newline$ -- 25
+num.names$ -- 7
+pop$ -- 38
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 30
+skip$ -- 32
 stack$ -- 0
 substring$ -- 48
-swap$ -- 20
+swap$ -- 21
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 12
-width$ -- 7
-write$ -- 60
+while$ -- 13
+width$ -- 8
+write$ -- 69
 (There were 2 warnings)

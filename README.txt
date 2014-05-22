@@ -11,5 +11,5 @@ In order to obtain the bibtex entries we need to generate the .bbl file. In orde
 latex generatebbl.tex
 bibtex generatebbl.tex
 
-3) Once this is done, proceed to copy the "bibitems" to the references.tex file in the "sections" folder.
+3) Once this is done, proceed to copy the "bibitems" from the generatebbl.bbl file to the publications.tex file in the "sections" folder.
 
