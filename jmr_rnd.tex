@@ -38,11 +38,13 @@
 \newboolean{thesis-abstract}
 \setboolean{thesis-abstract}{true}
 \newboolean{mscthesis-abstract}
-\setboolean{mscthesis-abstract}{true}
+\setboolean{mscthesis-abstract}{false}
 \newboolean{mengthesis-abstract}
-\setboolean{mengthesis-abstract}{true}
+\setboolean{mengthesis-abstract}{false}
 \newboolean{interests}
 \setboolean{interests}{true}
+\newboolean{teaching}
+\setboolean{teaching}{false}
 \newboolean{other-experience}
 \setboolean{other-experience}{true}
 \newboolean{communication}
@@ -63,13 +65,21 @@
 %----------------------------------------------------------------------------------------
 
 \input{sections/name-contact.tex}
-%\quote{\textbf{Research Interests}: Computer Vision, Machine Learning, Image Processing, Medical Imaging, Localisation and object recognition from mobile cameras and inertial sensors.}
+%\quote{\textbf{Research Interests}: Computer Vision, Machine Learning, Biologically Inspired algorithms, localization and object recognition from mobile cameras and inertial sensors.}
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
 \makecvtitle % Print the CV title
+
+
+%----------------------------------------------------------------------------------------
+% SHORT RESEARCH STATEMENT
+%----------------------------------------------------------------------------------------
+%
+\section{Research summary}
+My main research interests are in the fields of computer vision and pattern recognition. Particularly, I explore techniques that use biologically inspired algorithms to engineer solutions to a broad range of problems: from indoor localization to object recognition.
 
 %----------------------------------------------------------------------------------------
 % EDUCATION 
@@ -113,7 +123,7 @@
 % TEACHING 
 %----------------------------------------------------------------------------------------
 %
-\input{sections/teaching}
+\ifthenelse{\boolean{teaching}}{\input{sections/teaching}}{}
 
 %----------------------------------------------------------------------------------------
 %	OTHER EXPERIENCE 
