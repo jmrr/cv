@@ -41,16 +41,22 @@
 \setboolean{mscthesis-abstract}{false}
 \newboolean{mengthesis-abstract}
 \setboolean{mengthesis-abstract}{false}
+\newboolean{research-positions}
+\setboolean{research-positions}{false}
+\newboolean{publications}
+\setboolean{publications}{false}
 \newboolean{interests}
-\setboolean{interests}{true}
+\setboolean{interests}{false}
 \newboolean{teaching}
 \setboolean{teaching}{false}
 \newboolean{other-experience}
-\setboolean{other-experience}{true}
+\setboolean{other-experience}{false}
 \newboolean{communication}
 \setboolean{communication}{true}
 \newboolean{computer_skills}
 \setboolean{computer_skills}{true}
+\newboolean{award-desc}
+\setboolean{award-desc}{false}
 \newboolean{references}
 \setboolean{references}{true}
 
@@ -79,7 +85,8 @@
 %----------------------------------------------------------------------------------------
 %
 \section{Research summary}
-My main research interests are in the fields of computer vision and pattern recognition. Particularly, I explore techniques that use biologically inspired algorithms to engineer solutions to a broad range of problems: from indoor localization to object recognition.
+\input{sections/research-summary}
+
 
 %----------------------------------------------------------------------------------------
 % EDUCATION 
@@ -92,19 +99,38 @@ My main research interests are in the fields of computer vision and pattern reco
 %----------------------------------------------------------------------------------------
 %
 
+\section{Experience}
 \input{sections/experience}
 
+\input{sections/research-positions}
+
+\input{sections/other-experience}
 %----------------------------------------------------------------------------------------
 % RESEARCH POSITIONS
 %----------------------------------------------------------------------------------------
 %
+\ifthenelse{\boolean{research-positions}}
+{
+\section{Research Positions}
 \input{sections/research-positions}
+}{}
 
 %----------------------------------------------------------------------------------------
 % PUBLICATIONS
 %----------------------------------------------------------------------------------------
 %
+\section{Publications}
+
+\ifthenelse{\not \boolean{publications}}
+{
+\input{sections/publications-brief}
+}{}
+
+\ifthenelse{\boolean{publications}}
+{
 \input{sections/publications}
+}{}
+
 
 %----------------------------------------------------------------------------------------
 % DEV 
@@ -129,16 +155,9 @@ My main research interests are in the fields of computer vision and pattern reco
 %	OTHER EXPERIENCE 
 %----------------------------------------------------------------------------------------
 %
-\ifthenelse{\boolean{other-experience}}{\input{sections/other-experience}}{}
-
-%
-%\input{other}
-
-%----------------------------------------------------------------------------------------
-%	AWARDS 
-%----------------------------------------------------------------------------------------
-%
-\input{sections/awards}
+\ifthenelse{\boolean{other-experience}}{
+\section{Other Experience}
+\input{sections/other-experience}}{}
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
@@ -146,6 +165,12 @@ My main research interests are in the fields of computer vision and pattern reco
 
 \ifthenelse{\boolean{computer_skills}}{\input{sections/computer_skills}}{}
 
+
+%----------------------------------------------------------------------------------------
+%	AWARDS 
+%----------------------------------------------------------------------------------------
+%
+\input{sections/awards}
 
 
 %----------------------------------------------------------------------------------------
