@@ -13,7 +13,7 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
+% This template requires the moderncv.cls and .sty files to be in the same
 % directory as this .tex file. These files provide the resume style and themes file:///media/Data/Dropbox/Documents/CV/NEW/Modular/sections/name-contact.tex
 
 % used for structuring the document.
@@ -32,7 +32,7 @@
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
 \usepackage{ifthen}
-	
+
 % conditional compilation flags
 
 \newboolean{thesis-abstract}
@@ -88,7 +88,7 @@
 \input{sections/summary}
 
 %----------------------------------------------------------------------------------------
-%	INDUSTRIAL EXPERIENCE 
+%	INDUSTRIAL EXPERIENCE
 %----------------------------------------------------------------------------------------
 %
 
@@ -109,7 +109,7 @@
 }{}
 
 %----------------------------------------------------------------------------------------
-% EDUCATION 
+% EDUCATION
 %----------------------------------------------------------------------------------------
 %
 \input{sections/education}
@@ -133,26 +133,26 @@
 
 
 %----------------------------------------------------------------------------------------
-% DEV 
+% DEV
 %----------------------------------------------------------------------------------------
 %
 %\input{sections/dev}
 
 %----------------------------------------------------------------------------------------
-% ADVISING 
+% ADVISING
 %----------------------------------------------------------------------------------------
 %
 %\input{sections/advising}
 
 
 %----------------------------------------------------------------------------------------
-% TEACHING 
+% TEACHING
 %----------------------------------------------------------------------------------------
 %
 \ifthenelse{\boolean{teaching}}{\input{sections/teaching}}{}
 
 %----------------------------------------------------------------------------------------
-%	OTHER EXPERIENCE 
+%	OTHER EXPERIENCE
 %----------------------------------------------------------------------------------------
 %
 \ifthenelse{\boolean{other-experience}}{
@@ -167,7 +167,7 @@
 
 
 %----------------------------------------------------------------------------------------
-%	AWARDS 
+%	AWARDS
 %----------------------------------------------------------------------------------------
 %
 \input{sections/awards}
