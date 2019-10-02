@@ -6,10 +6,7 @@
 *blg
 *out
 *dvi
-20130902_Jose_Rivera_CV.pdf
-references/generatebbl.pdf
-20140208_Jose_Rivera_CV.pdf
+*pdf
 *.bcf
-jmr_rnd.pdf
-jmr_rnd.fdb_latexmk
-jmr_rnd.fls
+*.fdb_latexmk
+*.fls
